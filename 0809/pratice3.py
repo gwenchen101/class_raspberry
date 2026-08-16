@@ -1,4 +1,10 @@
+from pathlib import Path
+
 from google import genai
+from dotenv import load_dotenv
+
+
+load_dotenv(Path(__file__).with_name(".env"))
 
 client = genai.Client()
 
